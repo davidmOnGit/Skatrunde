@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>spielrundeErstellen</title>
+        <!--link rel="stylesheet" href="./css/jquery-ui.css" /-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="./css/layout.css" media="screen" />
+        <script type="text/javascript" src="javascript/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="javascript/jquery-ui.js"></script>
+        <script type="text/javascript" src="javascript/actions.js"></script>
+    </head>
+    <body>
+        <div>Runde starten</div>
+
+        <div id="spieler">
+        <ul id="sortable1" class="connectedSortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>David</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Andreas</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Lucky</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Norbert</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Florian</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>BumbleBee</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>CrashOverride</li>
+        </ul>
+        </div>
+    <br/>
+        
+         <div id="spielerSpiel">
+        <ul id="sortable2" class="connectedSortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>AcidBurn</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>ZeroCool</li>
+        </ul>
+        </div>
+
+        <script>
+            $(function() {
+                  $( "#sortable1, #sortable2" ).sortable({
+                       connectWith: ".connectedSortable"
+                          }).disableSelection();
+                 });
+        </script>
+
+    </body>
+
+
+
+</html>

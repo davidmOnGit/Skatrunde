@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 13px / 1.5 Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+caption {
+    background: #656e70;
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+    color:#fff;
+    font-size:15px;
+    font-weight:bold;
+    padding:10px 0 10px 10px;
+    text-align:left;
+    text-shadow:0 -1px 1px rgba(0,0,0,.5);}
+
+table, form, #geber{
+    padding: 10px 5px 10px 5px;
+    background: #e9eae8;
+    background: rgba(105, 115, 100, .15);
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+
+table {
+    width: 660px;
+}
+
+table thead {
+    background: rgba(135, 10, 100, .15);
+}
+
+form {
+    width: 260px;
+    position: absolute;
+    top: 60px;
+    left: 710px;
+}
+
+form input {
+    width: 30px;
+    margin-right: 5px;
+}
+
+form input[type=button] {
+    width: auto;
+}
+
+form fieldset {
+    padding: 10px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
+}
+
+form p {
+    padding: 0 5px 10px 5px;
+}
+
+#geber, #rangliste {
+    position: absolute;
+    top: 300px;
+    left: 710px;
+    width: 260px;
+}
+
+#geber label {
+    font-size: 20px;
+    color: green;
+    position: relative;
+    left: 90px;
+}
+
+#rangliste {
+    top: 395px;
+    width: 270px;
+}
+
+.connectedSortable { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%; 
+}
+
+.connectedSortable li {
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em; 
+    font-size: 1.4em; 
+    height: 18px; 
+}
+
+.connectedSortable li span { 
+    position: absolute;
+    margin-left: -1.3em; }
