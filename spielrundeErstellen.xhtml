@@ -14,31 +14,34 @@
         <div>Runde starten</div>
 
         <div id="spieler">
-        <ul id="sortable1" class="connectedSortable">
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>David</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Andreas</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Lucky</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Norbert</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Florian</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>BumbleBee</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>CrashOverride</li>
-        </ul>
+            <ul id="sortable1" class="connectedSortable">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>David</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Andreas</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Lucky</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Norbert</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Florian</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>BumbleBee</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>CrashOverride</li>
+            </ul>
         </div>
-    <br/>
+        <br/>
+        <div>Teilnehmer</div>
+        <div id="spielerSpiel">
+            <form action="index">
+            <ul id="sortable2" class="connectedSortable">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>AcidBurn</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>ZeroCool</li>
+            </ul>
+                <button type="submit">abschicken</button>
+            </form>
+        </div>
         
-         <div id="spielerSpiel">
-        <ul id="sortable2" class="connectedSortable">
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>AcidBurn</li>
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>ZeroCool</li>
-        </ul>
-        </div>
-
         <script>
             $(function() {
-                  $( "#sortable1, #sortable2" ).sortable({
-                       connectWith: ".connectedSortable"
-                          }).disableSelection();
-                 });
+                $( "#sortable1, #sortable2" ).sortable({
+                    connectWith: ".connectedSortable"
+                }).disableSelection();
+            });
         </script>
 
     </body>
